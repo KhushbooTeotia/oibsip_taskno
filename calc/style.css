@@ -1,0 +1,381 @@
+body {
+  background-image: url("./images/1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #c0c0c0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+.wrap {
+  width: 480px;
+  margin: 10px auto 0;
+}
+.cal {
+  position: relative;
+  width: 480px;
+  height: auto;
+  padding: 10px 0;
+  margin: auto;
+  background-color: #2f2f2f !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23a6a6a6' fill-opacity='0.09'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+  border: #000 1px solid;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 40px,
+    inset rgba(255, 255, 255, 0.9) 0px 1px 1px -1px;
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    -webkit-radial-gradient(center 150px, circle, #444, #111);
+  background-image: radial-gradient(center 150px, circle, #444, #111);
+  background-image: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.15) 100%
+    ),
+    -moz-radial-gradient(center 150px, circle, #444, #000);
+  overflow: hidden;
+  text-align: center;
+  z-index: 0;
+}
+.cal-bg {
+  display: block;
+  position: relative;
+  padding: 0 0 2px 0;
+  width: 482px;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 2%
+  );
+  border-radius: 5px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background-image: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.15) 40%,
+      rgba(255, 255, 255, 0.15) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-image: -moz-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 40%,
+      rgba(255, 255, 255, 0.1) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 9999;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 5px;
+    background-image: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0.1) 80%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-image: -moz-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0) 80%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 5px 50px 0;
+    z-index: 9999;
+  }
+}
+
+.screen {
+  width: 424px;
+  height: 93px;
+  margin: 12px auto 30px;
+  padding: 15px 20px;
+  color: #c0c0c0;
+  text-align: right;
+  font-size: 3em;
+  letter-spacing: 3px;
+  overflow: hidden;
+  border: #000 1px solid;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  box-shadow: inset rgba(0, 0, 0, 1) 0px 1px 4px,
+    inset rgba(225, 225, 225, 0.3) 0px -2px 4px -2px;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 1) 0px 1px 4px,
+    inset rgba(225, 225, 225, 0.3) 0px -2px 4px -2px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 1) 0px 1px 4px,
+    inset rgba(225, 225, 225, 0.3) 0px -2px 4px -2px;
+  background-image: -moz-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    -moz-linear-gradient(top, #3e3e3e 0%, #303030 100%);
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    -webkit-linear-gradient(top, #3e3e3e 0%, #303030 100%);
+  background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    linear-gradient(top, #3e3e3e 0%, #303030 100%);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 1.2em;
+}
+.buttons {
+  padding: 0;
+  width: 423px;
+  margin: auto;
+  overflow: hidden;
+  list-style: none;
+}
+.buttons li {
+  display: inline;
+  float: left;
+  padding: 0px;
+  margin-right: 13px;
+  margin-bottom: 10px;
+}
+/* remove margin-right on every fourth button */
+.buttons li:nth-child(4n) {
+  margin-right: 0;
+}
+.buttons a {
+  display: block;
+  position: relative;
+  width: 95px;
+  height: 68px;
+  padding: 18px 0 12px;
+  color: #c0c0c0;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  letter-spacing: -2px;
+  background-color: #2f2f2f;
+  border: #000 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: #000 0px -1px 0px;
+  box-shadow: inset rgba(255, 255, 255, 0.1) 0px 1px 0px,
+    inset rgba(0, 0, 0, 0.2) 0px -2px 2px;
+  -webkit-box-shadow: inset rgba(255, 255, 255, 0.1) 0px 1px 0px,
+    inset rgba(0, 0, 0, 0.2) 0px -2px 2px;
+  -moz-box-shadow: inset rgba(255, 255, 255, 0.1) 0px 1px 0px,
+    inset rgba(0, 0, 0, 0.2) 0px -2px 2px;
+  background-image: -moz-radial-gradient(
+    top center,
+    circle,
+    #363636 0%,
+    #313234 40%,
+    #2f2f2f 100%
+  );
+  background-image: -webkit-radial-gradient(
+    top center,
+    circle,
+    #363636 0%,
+    #313234 40%,
+    #2f2f2f 100%
+  );
+  background-image: radial-gradient(
+    top center,
+    circle,
+    #363636 0%,
+    #313234 40%,
+    #2f2f2f 100%
+  );
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: visible;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-image: -webkit-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.15) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background-image: -moz-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 9999;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-image: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0.1) 80%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-image: -moz-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0.1) 80%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: rgba(255, 255, 255, 1) 0px 5px 50px 0;
+  }
+}
+.buttons a:active {
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  background-image: -moz-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+  background-image: -webkit-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+  background-image: linear-gradient(top, #2f2f2f 0%, #363636 100%);
+}
+/* tall = button */
+.tall {
+  height: 151px !important;
+}
+/* Wide 0 */
+.wide {
+  width: 205px !important;
+}
+/* shift last row up, because the tall button pushes it down */
+.shift {
+  margin-top: -78px;
+}
+
+/* close, min, max buttons */
+.ctrls {
+  list-style: none;
+  margin: 5px 0 0 20px;
+  padding: 0;
+  position: absolute;
+}
+.ctrls li {
+  float: left;
+  display: inline;
+}
+.ctrls li a {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 100%;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 1px,
+    inset rgba(0, 0, 0, 1) 0px 1px 2px 1px;
+  background-image: -moz-radial-gradient(
+      9px -4px,
+      #fff 0px,
+      #fff 2px,
+      rgba(255, 255, 255, 0) 4px
+    ),
+    -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.5) 0%, rgba(
+            255,
+            255,
+            255,
+            0
+          )
+          100%);
+  background-image: -webkit-radial-gradient(
+      9px -4px,
+      #fff 0px,
+      #fff 2px,
+      rgba(255, 255, 255, 0) 4px
+    ),
+    -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5) 0%, rgba(
+            255,
+            255,
+            255,
+            0
+          )
+          100%);
+  background-image: radial-gradient(
+      9px -4px,
+      #fff 0px,
+      #fff 2px,
+      rgba(255, 255, 255, 0) 4px
+    ),
+    linear-gradient(
+      bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+.close a {
+  background-color: #f32c31;
+}
+.min a {
+  background-color: #f7bf67;
+}
+.max a {
+  background-color: #89cb5a;
+}
+.h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 0;
+  margin-top: 80px;
+  margin-bottom: -60px;
+  text-shadow: #000 0px -1px 0px;
+}
+p {
+  color: #fff;
+  text-shadow: #999 0px -1px 0px;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+a {
+  color: #953b3b;
+}

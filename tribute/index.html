@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute to My Life</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <label class="logo" data-aos="fade-right" data-aos-delay="150">
+        My Precious Person
+      </label>
+
+      <nav class="navbar" data-aos="fade-left" data-aos-delay="250">
+        <ul>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content" data-aos="fade-up" data-aos-duration="2000">
+        <h3>Shivanshu Balhara</h3>
+        <p>
+          <span id="element"></span>
+        </p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="heading" data-aos="fade-down">About Shivanshu Balhara</h2>
+
+      <div class="box-container">
+        <div class="left" data-aos="fade-down" data-aos-duration="1000">
+          <img src="./images/1.png" alt="" />
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-duration="1300">
+          <p>
+            Friendship is a remarkable bond that brings joy, support, and
+            laughter to our lives. I have Shivanshu who is more than my friend.
+            During my midst of life challenges, having someone like him who
+            stands by my side is an invaluable treasure. I’m, fortunate to have
+            a gem like Shivanshu in my life. Shivanshu is not just a friend but
+            a priceless companion who illuminates my path, no matter the
+            circumstances. Some qualities that make Shivanshu so precious and he
+            is always there for me.
+            <br />
+            <br />
+            Shivanshu's unwavering reliability is one of his most admirable
+            qualities. Regardless of the situation, he consistently demonstrates
+            his commitment to me. Whenever I need him, he is always there for me
+            to lend a helping hand or a listening ear. His presence in my life
+            brings a sense of security and assurance that I can rely on him, no
+            matter what.
+          </p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div
+          class="right bottom"
+          data-aos="fade-right"
+          data-aos-duration="1300"
+        >
+          <p>
+            Shivanshu's supportive nature towards me is like a beacon of light
+            during the darkest times. He is my biggest cheerleader, whether
+            facing a personal challenge or pursuing my dreams. His words of
+            encouragement and belief in my abilities boost my confidence and
+            give me the strength to overcome obstacles. In every condition,
+            Shivanshu remains my rock, standing beside me through thick and
+            thin.
+            <br />
+            <br />
+            One of the most remarkable qualities that make Shivanshu precious is
+            his genuine empathy. He possesses an innate ability to understand my
+            feelings and emotions. When I am happy, he rejoices with me; when I
+            am sad, he lends me a shoulder to lean on. His compassionate nature
+            allows me to express myself freely without fear of judgment. With
+            Shivanshu, I never feel alone because he empathizes and connects
+            with my experiences.
+            <br />
+            <br />
+            Shivanshu's presence is like a silver lining in any challenging
+            situation. His exceptional problem-solving skills and insightful
+            advice have proven invaluable time and time again. Whenever I am
+            faced with a dilemma, Shivanshu's logical thinking and sound
+            judgment provide clarity and help me make informed decisions. He
+            possesses the remarkable ability to see beyond the surface and guide
+            me toward the best possible outcome.
+          </p>
+        </div>
+        <div class="left" data-aos="fade-down" data-aos-duration="1000">
+          <img src="./images/2.png" alt="" />
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="left" data-aos="fade-down" data-aos-duration="1000">
+          <img src="./images/3.png" alt="" />
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-duration="1300">
+          <p>
+            Life can sometimes be overwhelming, but Shivanshu's light-hearted
+            nature brings joy and laughter to our friendship. He has a unique
+            way of making even the simplest moments memorable and enjoyable. His
+            infectious sense of humor and playful spirit remind me not to take
+            life too seriously. With Shivanshu, every moment becomes an
+            opportunity to create cherished memories & treasure forever.
+            <br />
+            <br />
+            I’m, truly blessed to have him in my life. His unwavering support,
+            reliability, empathy, problem-solving skills, and light-heartedness
+            make him an invaluable presence in my life. Cherish the bond I share
+            and continue to nurture this extraordinary friendship. I know, in
+            every condition, Shivanshu will be there for me, uplifting me, and
+            reminding me that I am never alone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <footer>
+        <p>Designed By Khushboo with 💛</p>
+      </footer>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["You're the reason for my smile."],
+        typeSpeed: 50,
+        showCursor: false,
+        backSpeed: 30,
+        startDelay: 100,
+        backDelay: 1500,
+        shuffle: false,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      let header = document.querySelector(".header");
+
+      window.addEventListener("scroll", () => {
+        let scrollPos = window.scrollY;
+
+        if (scrollPos > 250) {
+          header.classList.add("active");
+        } else {
+          header.classList.remove("active");
+        }
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
